@@ -1,5 +1,5 @@
 [project]
-name = "Uploadn_Chat"
+name = "Uploadn_Chat_(Tabular_RAG)"
 version = "0.1.0"
 description = "Chat with CSV/XLSX using DF/SQL/RAG and local Ollama phi3"
 requires-python = ">=3.10"

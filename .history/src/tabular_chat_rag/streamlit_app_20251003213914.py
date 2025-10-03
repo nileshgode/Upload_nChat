@@ -1,17 +1,5 @@
-
-import os
-import sys
-
-# Resolve absolute path to project root by going up two levels from this file
-_current_dir = os.path.dirname(os.path.abspath(__file__))
-_project_root = os.path.normpath(os.path.join(_current_dir, "..", ".."))
-
-# Append project root (which contains 'src') to sys.path if not already present
-if _project_root not in sys.path:
-    sys.path.append(_project_root)
-
 import streamlit as st
-from tabular_chat_rag.config import SETTINGS
+from src.tabular_chat_rag.config import SETTINGS
 from tabular_chat_rag.ingestion.loaders import load_file
 from tabular_chat_rag.ingestion.preview import head_preview, schema_summary
 from tabular_chat_rag.agents.sql_agent import plan_sql, run_sql
